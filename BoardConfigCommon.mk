@@ -175,3 +175,8 @@ TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libexynosdisplay.so|/system/vendor/lib/libexynosdisplay_shim.so \
     /system/vendor/lib64/hw/hwcomposer.exynos5.so|/system/vendor/lib64/libexynosdisplay_shim.so \
     /system/vendor/lib/hw/hwcomposer.exynos5.so|/system/vendor/lib/libexynosdisplay_shim.so
+#Kernel config
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/kernel/linux-x86/clang-r416183b/bin
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/kernel/linux-x86/clang-r416183b
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := 14.0
