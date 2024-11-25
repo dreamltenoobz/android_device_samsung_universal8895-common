@@ -205,10 +205,6 @@ PRODUCT_PACKAGES += \
 ## the preloading and non-preloading builds, please check the above issue.
 PRODUCT_PROPERTY_OVERRIDES += ro.zygote.disable_gl_preload=1
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service.samsung-libperfmgr
-
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
@@ -308,7 +304,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/samsung/aidl/power-libperfmgr
 
 # Shims
 PRODUCT_PACKAGES += \
